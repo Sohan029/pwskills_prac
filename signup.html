@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            background-color: #fff;
+            width: 450px;
+            height: 550px;
+            border: 1px solid;
+            margin: 3rem auto;
+            padding-inline: 1rem;
+            padding-block:1rem ;
+        }
+        .labels{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        input{
+            width: 100%;
+            margin-top: 0.5rem;
+            line-height: 2;
+        }
+        select{
+            width: 100%;
+            margin-top: 0.5rem;
+            padding-block: 0.5rem;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        button{
+            width: 100%;
+            margin: 2rem auto;
+            background-color: black;
+            color: aliceblue;
+            padding-block: 10px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <div class="labels"><label for="name">Name :</label></div>
+        <input type="text" id="name">
+        <div class="labels"><label for="batch">Batch :</label></div>
+        <select name="batch" id="batch">
+            <option value="1">Sigma 2.0</option>
+            <option value="2">Sigma</option>
+        </select>
+       <div class="labels"> <label for="age">Age :</label></div>
+        <input type="number">
+        <div class="labels"><label for="email">Email :</label></div>
+        <input type="email">
+        <div class="labels"><label for="password">Password :</label></div>
+        <input type="password">
+        <button>Signup</button>
+
+    </div>
+</body>
+</html>
